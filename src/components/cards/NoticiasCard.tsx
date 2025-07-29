@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material"
 
-interface NoticiasCardProps {
+ export interface NoticiasCardProps {
     imagem?: string
     titulo?: string
     subTitulo?: string

@@ -2,6 +2,8 @@ import { Stack } from '@mui/material'
 import Button from '@mui/material/Button'
 
 import './navigation.css'
+import { Link } from 'react-router'
+import Login from '../../pages/Login'
 
 function Navigation() {
     
@@ -27,7 +29,7 @@ function Navigation() {
                 <Button size='large' variant="text" sx={{ color: '#D9D9D9'}} >Notícias</Button>
                 <Button size='large'variant="text" sx={{ color: '#D9D9D9'}} >Cases de Sucesso</Button>
                 <Button size='large' variant="text" sx={{ color: '#D9D9D9'}} >Contato</Button>
-                <Button sx={{borderRadius: 5}} size='large' variant="contained" color="primary">Login</Button>
+                <Link to={'/login'}><Button sx={{borderRadius: 5}} size='large' variant="contained" color="primary">Login</Button></Link>
                 <Button sx={{borderRadius: 5}}  size='large' variant="contained" color="primary">Cadastro</Button>
             </Stack>
         </Stack>

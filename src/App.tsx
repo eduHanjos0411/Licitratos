@@ -1,19 +1,16 @@
+import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
-import Banner from './components/banner/Banner'
-import Equipe from './components/equipe/Equipe'
-import Navigation from './components/navigation/Navigation'
-import Noticias from './components/noticias/Noticias'
-import Servicos from './components/servicos/Servicos'
+import Home from './pages/Home'
+import Login from './pages/Login'
 
 function App() {
     return (
-        <>
-            <Navigation/>
-            <Banner/>
-            <Equipe/>
-            <Servicos/>
-            <Noticias/>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path='Licitratos' element={<Home/>}/>
+                <Route path='/login' element={<Login/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 
