@@ -6,7 +6,7 @@ import Noticias from "../components/noticias/Noticias"
 import Contatos from "../components/contatos/Contatos"
 import Footer from "../components/footer/Footer"
 import Navigation from "../components/navigation/Navigation"
-import { Cases } from "@mui/icons-material"
+import Cases from "../components/casesDeSucesso/Cases"
 
 function Home() {
   return (
