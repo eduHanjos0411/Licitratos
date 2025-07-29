@@ -3,7 +3,6 @@ import Button from '@mui/material/Button'
 
 import './navigation.css'
 import { Link } from 'react-router'
-import Login from '../../pages/Login'
 
 function Navigation() {
     
